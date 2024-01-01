@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Sample page built during a FreeCodeCamp course that features a form with multiple inputs.">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Survey Form</title>
+</head>
+<body>
+   <h1 id="title">This is a Survey Form</h1>
+   <p id="description">Thank you for taking the time to help us improve the platform</p>
+   <form id="survey-form">
+      <div class="form-block">
+         <label class="block" for="name" id="name-label">Name</label>
+         <input class="block" id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="form-block">
+         <label class="block" for="email" id="email-label">Email</label>
+         <input class="block" id="email" type="email" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-block">
+         <label class="block" for="number" id="number-label">Age <span class="optional">(optional)</span></label>
+         <input class="block" id="number" type="number" min="13" max="120" placeholder="Age">
+      </div>
+      <div class="form-block">
+         <label class="block" for="dropdown">This is a dropdown selection</label>
+         <select class="block" id="dropdown">
+            <option value="0">Select one option</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+         </select>
+      </div>
+      <div class="form-block">
+         <p class="block">This is our radio section</p>
+         <div class="block">
+            <input type="radio" name="radio-options" id="option-one" value="option-one" checked>
+            <label for="option-one">This is the first option for the radio (exclusive) selection</label>
+         </div>
+         <div class="block">
+            <input type="radio" name="radio-options" id="option-two" value="option-two">
+            <label for="option-two">This is the second option for the radio (exclusive) selection</label>
+         </div>
+      </div>
+      </div>
+      <div class="form-block">
+         <p class="block">This is our checkbox section</p>
+         <div class="block">
+            <input id="checkbox-one" type="checkbox" value="1">
+            <label for="checkbox-one">This is the first option for the checkbox (inclusive) selection</label>
+         </div>
+         <div class="block">
+            <input id="checkbox-two" type="checkbox" value="2">
+            <label for="checkbox-two">This is the second option for the checkbox (inclusive) selection</label>
+         </div>
+         <div class="block">
+            <input id="checkbox-three" type="checkbox" value="3">
+            <label for="checkbox-three">This is the third option for the checkbox (inclusive) selection</label>
+         </div>
+         <div class="block">
+            <input id="checkbox-four" type="checkbox" value="4">
+            <label for="checkbox-four">This is the fourth option for the checkbox (inclusive) selection</label>
+         </div>
+      </div>
+      </div>
+      <div class="form-block">
+         <div class="block">
+            <p class="block">Comments section</p>
+            <textarea rows=10 placeholder="I really like..."></textarea>
+         </div>
+      </div>
+      <div class="form-block">
+         <input type="submit" id="submit" value="Submit">
+      </div>
+   </form>
+</body>
+</html>
